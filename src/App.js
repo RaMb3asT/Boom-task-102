@@ -4,8 +4,7 @@ import { motion } from "framer-motion"
 function App() {
   return (
     <div className="App">
-      <motion.div animate={{ x: 100 }}>
-      <form>
+      <motion.form animate={{ x: 100 }} initial={false} style={{translateX: "50px"}}>
         <h1>Create An Account</h1>
         <label>
           Email:
@@ -16,8 +15,7 @@ function App() {
           <input name="password" type="password" required />
         </label>
         <button>Sign Up!</button>
-      </form>
-      </motion.div>
+      </motion.form>
     </div>
   );
 }
