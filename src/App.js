@@ -1,8 +1,10 @@
 import "./App.css";
+import { motion } from "framer-motion"
 
 function App() {
   return (
     <div className="App">
+      <motion.div animate={{ x: 100 }}>
       <form>
         <h1>Create An Account</h1>
         <label>
@@ -15,6 +17,7 @@ function App() {
         </label>
         <button>Sign Up!</button>
       </form>
+      </motion.div>
     </div>
   );
 }
